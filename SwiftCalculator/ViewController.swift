@@ -12,8 +12,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var display: UILabel!
     
-    var isUserTyping : Bool = false
-    
+    var isUserTyping = false
+    var operandStack = Array<Double>()
 
     @IBAction func digit(sender: UIButton) {
         let digit = sender.currentTitle!
@@ -26,5 +26,21 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func enter() {
+        operandStack.append(displayValue)
+        isUserTyping = false
+        
+        println("\(operandStack)")
+    }
+    
+    var displayValue : Double {
+        get {
+            return NSNumberFormatter().numberFromString(display.text!)!.doubleValue
+        }
+        set {
+            display.text = "\(newValue)"
+            isUserTyping = false
+        }
+    }
 }
 

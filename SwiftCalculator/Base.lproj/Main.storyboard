@@ -86,6 +86,15 @@
                                     <action selector="digit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QGd-cE-LJe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4G-m2-CWe">
+                                <rect key="frame" x="83" y="180" width="59" height="45"/>
+                                <state key="normal" title="2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="digit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DiS-lL-nhq"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aR-tG-OSO">
                                 <rect key="frame" x="83" y="233" width="59" height="45"/>
                                 <state key="normal" title="0">
@@ -104,13 +113,13 @@
                                     <action selector="digit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p6D-mZ-W0f"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4G-m2-CWe">
-                                <rect key="frame" x="83" y="180" width="59" height="45"/>
-                                <state key="normal" title="2">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UaT-7h-YOV">
+                                <rect key="frame" x="150" y="233" width="59" height="45"/>
+                                <state key="normal" title="⏎">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="digit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DiS-lL-nhq"/>
+                                    <action selector="enter" destination="BYZ-38-t0r" eventType="touchUpInside" id="eeA-Vb-L8D"/>
                                 </connections>
                             </button>
                         </subviews>
